@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoireSoft - 실내공간정보 전문 기업</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>MoireSoft</h1>
+                <span class="tagline">실내공간정보 전문기업</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#solution">솔루션</a></li>
+                <li><a href="#features">기능</a></li>
+                <li><a href="#market">시장</a></li>
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">모든 건물을 스마트하게 모든 공간을 연결합니다</h1>
+                <p class="hero-subtitle">
+                    Qwayter는 실내 공간의 디지털 전환을 선도하는<br>
+                    빌딩 디지털트윈 통합 솔루션입니다
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('solution')">솔루션 알아보기</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">도입 문의</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="building-animation">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="100" y="100" width="200" height="250" fill="#e8f4f8" stroke="#0066cc" stroke-width="2"/>
+                        <rect x="120" y="120" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="180" y="120" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="240" y="120" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="120" y="180" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="180" y="180" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="240" y="180" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="120" y="240" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="180" y="240" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="240" y="240" width="40" height="40" fill="#0066cc" opacity="0.6"/>
+                        <rect x="160" y="300" width="80" height="50" fill="#0066cc" opacity="0.8"/>
+                        <polyline points="150,150 250,150 250,250 150,250"
+                                  stroke="#00cc66" stroke-width="3" fill="none"
+                                  stroke-dasharray="5,5" class="path-animation"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문제점 섹션 -->
+    <section class="problem">
+        <div class="container">
+            <h2 class="section-title">이런 경험 있으신가요?</h2>
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <div class="icon">🏥</div>
+                    <p>복잡한 병원에서<br>진료실을 찾아 헤매기</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">🔥</div>
+                    <p>화재 시 비상구를<br>찾지 못해 우왕좌왕</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">♿</div>
+                    <p>휠체어 이용 가능한<br>경로를 몰라 곤란</p>
+                </div>
+                <div class="problem-item">
+                    <div class="icon">🏢</div>
+                    <p>시설 관리 비용<br>매년 증가</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 솔루션 섹션 -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <h2 class="section-title">Qwayter 솔루션</h2>
+            <p class="section-subtitle">실내 공간의 완벽한 디지털 전환</p>
+
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="card-icon">📍</div>
+                    <h3>실내 네비게이션</h3>
+                    <p>QR 코드 스캔만으로 현재 위치 파악 및 목적지까지 최적 경로 안내</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🗺️</div>
+                    <h3>3D 공간 시각화</h3>
+                    <p>2D/3D 통합 실내 지도로 직관적인 공간 파악 가능</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI 자동 변환</h3>
+                    <p>건축 도면 업로드만으로 자동으로 디지털 맵 생성</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">💬</div>
+                    <h3>대화형 안내</h3>
+                    <p>AI 챗봇이 자연어로 길 안내 및 시설 정보 제공</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🔧</div>
+                    <h3>통합 시설 관리</h3>
+                    <p>실시간 시설 모니터링 및 유지보수 작업 관리</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon">🚨</div>
+                    <h3>비상 대응 시스템</h3>
+                    <p>화재 등 비상시 최적 대피 경로 실시간 안내</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 기능 섹션 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">왜 Qwayter인가?</h2>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>국제 표준 준수</h3>
+                        <p>OGC 국제 표준 기반으로 모든 시스템과 호환 가능</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>50% 비용 절감</h3>
+                        <p>기존 스마트 빌딩 솔루션 대비 절반의 비용으로 구축</p>
+                    </div>
+                </div>
+<!--                <div class="feature-item">-->
+<!--                    <div class="feature-number">03</div>-->
+<!--                    <div class="feature-content">-->
+<!--                        <h3>검증된 기술력</h3>-->
+<!--                        <p>국토교통부 R&D 사업으로 기술 검증 완료</p>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>배리어프리 특화</h3>
+                        <p>휠체어, 시각장애인 등 모든 사용자를 위한 접근성 보장</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 타겟 시장 섹션 -->
+    <section id="market" class="market">
+        <div class="container">
+            <h2 class="section-title">도입이 필요한 곳</h2>
+
+            <div class="market-grid">
+                <div class="market-card">
+                    <div class="market-icon">🏥</div>
+                    <h3>병원</h3>
+                    <ul>
+                        <li>환자 동선 최적화</li>
+                        <li>응급 상황 대응</li>
+                        <li>의료진 효율 증대</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">🎓</div>
+                    <h3>대학교</h3>
+                    <ul>
+                        <li>캠퍼스 안내 시스템</li>
+                        <li>강의실 찾기</li>
+                        <li>시설 예약 관리</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">🛍️</div>
+                    <h3>쇼핑몰</h3>
+                    <ul>
+                        <li>매장 네비게이션</li>
+                        <li>고객 동선 분석</li>
+                        <li>프로모션 연계</li>
+                    </ul>
+                </div>
+                <div class="market-card">
+                    <div class="market-icon">🏛️</div>
+                    <h3>공공기관</h3>
+                    <ul>
+                        <li>민원인 안내</li>
+                        <li>배리어프리 의무화</li>
+                        <li>디지털 정부 구현</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 회사 소개 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">MoireSoft 소개</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>실내공간정보 전문 기업</h3>
+                    <p>
+                        MoireSoft는 실내 공간의 디지털 전환을 선도하는 전문 기업입니다.<br><br>
+
+                        국내 최고의 IT 전문가들이 모여 2025년 설립되었습니다.<br><br>
+
+                        우리는 단순한 지도를 넘어 건물의 두뇌를 만들고,
+                        모든 사람이 안전하고 편리하게 실내 공간을 이용할 수 있는
+                        세상을 만들어가고 있습니다.
+                    </p>
+
+<!--                    <div class="stats">-->
+<!--                        <div class="stat-item">-->
+<!--                            <h4>10+</h4>-->
+<!--                            <p>구축 건물</p>-->
+<!--                        </div>-->
+<!--                        <div class="stat-item">-->
+<!--                            <h4>15명</h4>-->
+<!--                            <p>전문 인력</p>-->
+<!--                        </div>-->
+<!--                        <div class="stat-item">-->
+<!--                            <h4>50%</h4>-->
+<!--                            <p>비용 절감</p>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">도입 문의</h2>
+            <p class="section-subtitle">귀사의 건물을 스마트하게 변화시켜 드립니다</p>
+
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="company" placeholder="회사/기관명" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="담당자명" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="이메일" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="연락처" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="문의 내용을 입력해주세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">문의하기</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <strong>이메일</strong>
+                        <p>moiresoftware@gmail.com</p>
+                    </div>
+<!--                    <div class="info-item">-->
+<!--                        <strong>전화</strong>-->
+<!--                        <p>02-1234-5678</p>-->
+<!--                    </div>-->
+<!--                    <div class="info-item">-->
+<!--                        <strong>주소</strong>-->
+<!--                        <p>서울특별시 강남구 테헤란로 123<br>스마트빌딩 10층</p>-->
+<!--                    </div>-->
+                    <div class="info-item">
+                        <strong>웹사이트</strong>
+                        <p>www.qwayter.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MoireSoft</h3>
+                    <p>실내공간정보 전문기업</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#solution">솔루션</a></li>
+                        <li><a href="#features">기능</a></li>
+                        <li><a href="#about">회사소개</a></li>
+                        <li><a href="#contact">문의</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoireSoft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
