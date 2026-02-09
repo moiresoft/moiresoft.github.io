@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoireSoft - AI 에이전트 기반 자동화 솔루션 전문기업</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>MoireSoft</h1>
+                <span class="tagline">AI 에이전트 기반 자동화 솔루션</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li class="dropdown">
+                    <a href="#business" class="dropbtn">사업분야 ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="switchBusiness('building')">건물 관리 자동화</a>
+                        <a href="#" onclick="switchBusiness('office')">사무 자동화</a>
+                    </div>
+                </li>
+                <li><a href="#features">핵심기술</a></li>
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    AI가 만드는 <span class="highlight">자동화</span>의 미래<br>
+                    모든 업무를 <span class="highlight">스마트</span>하게
+                </h1>
+                <p class="hero-subtitle">
+                    MoireSoft는 AI 에이전트 기반으로 건물 관리부터 사무 업무까지<br>
+                    모든 과정을 자동화하는 통합 솔루션을 제공합니다
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('business')">사업분야 보기</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('contact')">도입 문의</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="ai-animation">
+                    <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- AI Brain -->
+                        <circle cx="200" cy="200" r="80" fill="#e8f4f8" stroke="#0066cc" stroke-width="3"/>
+                        <circle cx="180" cy="180" r="8" fill="#0066cc"/>
+                        <circle cx="220" cy="180" r="8" fill="#0066cc"/>
+                        <circle cx="200" cy="220" r="5" fill="#0066cc"/>
+
+                        <!-- Neural Network -->
+                        <line x1="200" y1="120" x2="200" y2="160" stroke="#00cc66" stroke-width="2"/>
+                        <line x1="160" y1="140" x2="180" y2="170" stroke="#00cc66" stroke-width="2"/>
+                        <line x1="240" y1="140" x2="220" y2="170" stroke="#00cc66" stroke-width="2"/>
+                        <line x1="140" y1="200" x2="170" y2="190" stroke="#00cc66" stroke-width="2"/>
+                        <line x1="260" y1="200" x2="230" y2="190" stroke="#00cc66" stroke-width="2"/>
+
+                        <!-- Automation Symbols -->
+                        <rect x="120" y="320" width="30" height="30" fill="#0066cc" opacity="0.7" class="float-animation"/>
+                        <rect x="180" y="340" width="25" height="25" fill="#00cc66" opacity="0.7" class="float-animation" style="animation-delay: 0.5s"/>
+                        <rect x="250" y="325" width="35" height="35" fill="#0066cc" opacity="0.7" class="float-animation" style="animation-delay: 1s"/>
+
+                        <!-- Connection Lines -->
+                        <polyline points="200,280 200,320 135,335" stroke="#00cc66" stroke-width="2" fill="none" stroke-dasharray="3,3" class="pulse-animation"/>
+                        <polyline points="200,280 200,320 193,340" stroke="#00cc66" stroke-width="2" fill="none" stroke-dasharray="3,3" class="pulse-animation" style="animation-delay: 0.5s"/>
+                        <polyline points="200,280 200,320 267,342" stroke="#00cc66" stroke-width="2" fill="none" stroke-dasharray="3,3" class="pulse-animation" style="animation-delay: 1s"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사업분야 섹션 -->
+    <section id="business" class="business">
+        <div class="container">
+            <h2 class="section-title">주요 사업분야</h2>
+            <div class="business-tabs">
+                <button class="tab-button active" onclick="switchBusiness('building')">
+                    🏢 건물 관리 자동화 & 실내 네비게이션
+                </button>
+                <button class="tab-button" onclick="switchBusiness('office')">
+                    📊 사무 자동화
+                </button>
+            </div>
+
+            <!-- 건물 관리 자동화 콘텐츠 -->
+            <div id="building-content" class="business-content active">
+                <!-- 문제점 섹션 -->
+                <div class="problem-section">
+                    <h3 class="subsection-title">이런 문제가 있으신가요?</h3>
+                    <div class="problem-grid">
+                        <div class="problem-item">
+                            <div class="icon">🏥</div>
+                            <p>복잡한 병원에서<br>진료실을 찾아 헤매기</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">🔥</div>
+                            <p>화재 시 비상구를<br>찾지 못해 우왕좌왕</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">♿</div>
+                            <p>휠체어 이용 가능한<br>경로를 몰라 곤란</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">🔧</div>
+                            <p>시설 관리 업무<br>비효율과 비용 증가</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qwayter 솔루션 -->
+                <div class="solution-section">
+                    <h3 class="subsection-title">Qwayter 솔루션</h3>
+                    <p class="section-subtitle">AI 기반 빌딩 디지털트윈 & 자동화 관리</p>
+
+                    <div class="solution-grid">
+                        <div class="solution-card">
+                            <div class="card-icon">📍</div>
+                            <h4>AI 실내 네비게이션</h4>
+                            <p>QR 코드 스캔으로 즉시 위치 파악, AI가 최적 경로 자동 계산 및 안내</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">🗺️</div>
+                            <h4>3D 공간 자동 시각화</h4>
+                            <p>AI가 도면을 자동 분석하여 실시간 3D 디지털트윈 생성</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">🤖</div>
+                            <h4>자동 시설 관리</h4>
+                            <p>AI 에이전트가 시설 상태를 모니터링하고 자동으로 관리 업무 배정</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">💬</div>
+                            <h4>AI 대화형 안내</h4>
+                            <p>자연어 처리로 방문자와 직원에게 실시간 음성/텍스트 안내 제공</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">📊</div>
+                            <h4>예측 분석 시스템</h4>
+                            <p>과거 데이터 학습으로 시설 고장 예측 및 선제적 유지보수</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">🚨</div>
+                            <h4>자동 비상 대응</h4>
+                            <p>화재 등 비상시 AI가 실시간 최적 대피 경로 자동 계산 및 안내</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 타겟 시장 -->
+                <div class="market-section">
+                    <h3 class="subsection-title">주요 적용 분야</h3>
+                    <div class="market-grid">
+                        <div class="market-card">
+                            <div class="market-icon">🏥</div>
+                            <h4>병원 & 의료시설</h4>
+                            <ul>
+                                <li>환자 동선 AI 최적화</li>
+                                <li>응급 상황 자동 대응</li>
+                                <li>의료 장비 자동 관리</li>
+                                <li>감염 경로 추적</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">🎓</div>
+                            <h4>대학 & 교육기관</h4>
+                            <ul>
+                                <li>캠퍼스 AI 안내 시스템</li>
+                                <li>강의실 자동 예약 관리</li>
+                                <li>시설 사용량 분석</li>
+                                <li>에너지 사용 최적화</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">🛍️</div>
+                            <h4>쇼핑몰 & 복합시설</h4>
+                            <ul>
+                                <li>고객 동선 AI 분석</li>
+                                <li>매장 추천 시스템</li>
+                                <li>주차장 자동 안내</li>
+                                <li>혼잡도 실시간 관리</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">🏛️</div>
+                            <h4>공공기관 & 관공서</h4>
+                            <ul>
+                                <li>민원인 자동 안내</li>
+                                <li>업무 공간 효율 분석</li>
+                                <li>보안 구역 자동 관리</li>
+                                <li>배리어프리 경로 제공</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 사무 자동화 콘텐츠 -->
+            <div id="office-content" class="business-content">
+                <!-- 문제점 섹션 -->
+                <div class="problem-section">
+                    <h3 class="subsection-title">이런 업무에 지치셨나요?</h3>
+                    <div class="problem-grid">
+                        <div class="problem-item">
+                            <div class="icon">📄</div>
+                            <p>반복적인 문서 작성과<br>데이터 정리 업무</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">📧</div>
+                            <p>수십 개의 이메일<br>확인과 답변 처리</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">📊</div>
+                            <p>엑셀 데이터 분석과<br>보고서 작성</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="icon">🗓️</div>
+                            <p>회의 일정 조율과<br>업무 스케줄 관리</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI 에이전트 솔루션 -->
+                <div class="solution-section">
+                    <h3 class="subsection-title">Q에이전트 솔루션</h3>
+                    <p class="section-subtitle">AI 에이전트가 대신하는 사무 업무 자동화</p>
+
+                    <div class="solution-grid">
+                        <div class="solution-card">
+                            <div class="card-icon">📝</div>
+                            <h4>문서 자동 생성</h4>
+                            <p>AI가 회의록, 보고서, 제안서를 자동 작성하고 형식에 맞게 편집</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">📧</div>
+                            <h4>이메일 자동 처리</h4>
+                            <p>중요도 분류, 자동 답변, 일정 조율까지 AI가 대신 처리</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">📊</div>
+                            <h4>데이터 분석 자동화</h4>
+                            <p>엑셀 데이터를 AI가 분석하여 인사이트와 시각화 자동 생성</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">🗓️</div>
+                            <h4>스케줄 지능 관리</h4>
+                            <p>AI가 참석자 일정을 분석하여 최적 회의 시간 자동 제안</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">💰</div>
+                            <h4>경비 자동 정산</h4>
+                            <p>영수증 촬영만으로 AI가 항목 분류하고 경비 보고서 자동 작성</p>
+                        </div>
+                        <div class="solution-card">
+                            <div class="card-icon">📞</div>
+                            <h4>고객 응대 자동화</h4>
+                            <p>AI 챗봇이 고객 문의를 분석하고 적절한 답변 자동 생성</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 타겟 시장 -->
+                <div class="market-section">
+                    <h3 class="subsection-title">주요 적용 분야</h3>
+                    <div class="market-grid">
+                        <div class="market-card">
+                            <div class="market-icon">🏢</div>
+                            <h4>중소기업 & 스타트업</h4>
+                            <ul>
+                                <li>인사 업무 자동화</li>
+                                <li>회계 처리 간소화</li>
+                                <li>고객 관리 시스템</li>
+                                <li>업무 프로세스 최적화</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">🏦</div>
+                            <h4>금융 & 보험</h4>
+                            <ul>
+                                <li>서류 심사 자동화</li>
+                                <li>고객 상담 지원</li>
+                                <li>리스크 분석 보고서</li>
+                                <li>규정 준수 체크</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">⚖️</div>
+                            <h4>법무 & 컨설팅</h4>
+                            <ul>
+                                <li>계약서 검토 지원</li>
+                                <li>판례 분석 자동화</li>
+                                <li>클라이언트 보고서</li>
+                                <li>업무 시간 추적</li>
+                            </ul>
+                        </div>
+                        <div class="market-card">
+                            <div class="market-icon">🛒</div>
+                            <h4>이커머스 & 유통</h4>
+                            <ul>
+                                <li>주문 처리 자동화</li>
+                                <li>재고 관리 최적화</li>
+                                <li>고객 리뷰 분석</li>
+                                <li>마케팅 콘텐츠 생성</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 핵심 기술 섹션 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">핵심 AI 기술</h2>
+
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>딥러닝 기반 자동 학습</h3>
+                        <p>사용자 패턴을 학습하여 점점 더 정확하고 효율적인 자동화 수행</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>자연어 처리 (NLP)</h3>
+                        <p>한국어 특화 언어 모델로 자연스러운 대화와 문서 처리</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>컴퓨터 비전 (CV)</h3>
+                        <p>이미지와 영상 분석을 통한 공간 인식과 자동 분류</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>예측 분석 엔진</h3>
+                        <p>빅데이터 분석으로 미래 상황을 예측하고 선제적 대응</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 회사 소개 섹션 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">MoireSoft 소개</h2>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>AI 에이전트 기반 자동화 솔루션 전문 기업</h3>
+                    <p>
+                        MoireSoft는 AI 기술로 모든 업무를 자동화하는 혁신적인 솔루션을 제공합니다.<br><br>
+
+                        건물 관리부터 사무 업무까지, AI 에이전트가 사람을 대신해
+                        반복적이고 복잡한 작업들을 자동으로 처리합니다.<br><br>
+
+                        각 분야 전문가로 구성된 MoireSoft의 기술력과
+                        최신 AI 기술을 결합하여 고객의 업무 효율성을
+                        획기적으로 향상시킵니다.<br><br>
+
+                        우리는 AI가 인간의 파트너가 되어
+                        더 창의적이고 가치 있는 일에 집중할 수 있는
+                        미래를 만들어가고 있습니다.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>70%</h4>
+                            <p>업무 시간 단축</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50%</h4>
+                            <p>운영 비용 절감</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>24/7</h4>
+                            <p>무중단 자동화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의 섹션 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">도입 문의</h2>
+            <p class="section-subtitle">AI 자동화로 귀하의 업무를 혁신해드립니다</p>
+
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <select id="business-type" required>
+                            <option value="">관심 분야를 선택해주세요</option>
+                            <option value="building">건물 관리 자동화 & 실내 네비게이션</option>
+                            <option value="office">사무 자동화</option>
+                            <option value="both">두 분야 모두</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="company" placeholder="회사/기관명" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="담당자명" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="이메일" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="연락처" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="자동화하고 싶은 업무나 문의 내용을 구체적으로 적어주세요"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">AI 자동화 상담 신청</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <strong>이메일</strong>
+                        <p>moiresoftware@gmail.com</p>
+                    </div>
+                    <!--
+                    <div class="info-item">
+                        <strong>전화</strong>
+                        <p>02-1234-5678</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>주소</strong>
+                        <p>서울특별시 강남구 테헤란로 123<br>AI 센터 10층</p>
+                    </div>
+                    -->
+                    <div class="info-item">
+                        <strong>웹사이트</strong>
+                        <p>www.moiresoft.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MoireSoft</h3>
+                    <p>AI 에이전트 기반 자동화 솔루션</p>
+                </div>
+                <div class="footer-links">
+                    <h4>사업분야</h4>
+                    <ul>
+                        <li><a href="#" onclick="switchBusiness('building')">건물 관리 자동화</a></li>
+                        <li><a href="#" onclick="switchBusiness('office')">사무 자동화</a></li>
+                        <li><a href="#features">핵심기술</a></li>
+                        <li><a href="#about">회사소개</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">AI 윤리 정책</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MoireSoft. All rights reserved. Powered by AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
