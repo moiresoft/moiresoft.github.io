@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoireSoft — Soul-Driven AI Agent 전문기업</title>
-    <meta name="description" content="AI 에이전트에 고유한 정체성을 부여하는 Soul-Driven AI 기술. Soul Spec, SoulScan, ClawSouls 플랫폼을 통해 안전하고 일관된 AI 에이전트를 구축합니다.">
+    <title>MoireSoft — Soul-Driven AI Agent Company</title>
+    <meta name="description" content="We give AI agents a persistent identity. Soul Spec, SoulScan, and the ClawSouls platform let you build safe, consistent AI agents.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -25,8 +25,6 @@
         }
         a { color: var(--accent); text-decoration: none; }
         a:hover { color: #c4b5fd; }
-
-        /* Nav */
         nav {
             position: fixed; top: 0; width: 100%; z-index: 100;
             background: rgba(15,15,26,0.95); backdrop-filter: blur(12px);
@@ -40,8 +38,6 @@
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a { color: var(--text-muted); font-size: 0.9rem; transition: color 0.2s; }
         .nav-links a:hover { color: white; }
-
-        /* Hero */
         .hero {
             min-height: 100vh; display: flex; align-items: center; justify-content: center;
             text-align: center; padding: 6rem 2rem 4rem;
@@ -60,19 +56,9 @@
             font-weight: 600; font-size: 1rem; transition: background 0.2s;
         }
         .btn-primary:hover { background: var(--primary-dark); color: white; }
-
-        /* Sections */
         section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
-        section h3 {
-            font-size: 2rem; font-weight: 700; text-align: center;
-            margin-bottom: 1rem;
-        }
-        section .subtitle {
-            text-align: center; color: var(--text-muted); margin-bottom: 3rem;
-            font-size: 1.05rem;
-        }
-
-        /* Cards Grid */
+        section h3 { font-size: 2rem; font-weight: 700; text-align: center; margin-bottom: 1rem; }
+        section .subtitle { text-align: center; color: var(--text-muted); margin-bottom: 3rem; font-size: 1.05rem; }
         .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
         .card {
             background: var(--bg-card); border: 1px solid var(--border);
@@ -82,8 +68,6 @@
         .card-icon { font-size: 2rem; margin-bottom: 1rem; }
         .card h4 { font-size: 1.15rem; font-weight: 600; margin-bottom: 0.6rem; }
         .card p { font-size: 0.9rem; color: var(--text-muted); }
-
-        /* Tech Stack */
         .tech-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
         .tech-item {
             background: var(--bg-card); border: 1px solid var(--border);
@@ -92,8 +76,6 @@
         .tech-item .emoji { font-size: 2.5rem; margin-bottom: 0.8rem; }
         .tech-item h4 { margin-bottom: 0.4rem; }
         .tech-item p { font-size: 0.85rem; color: var(--text-muted); }
-
-        /* Products */
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
         .product {
             background: var(--bg-card); border: 1px solid var(--border);
@@ -103,8 +85,6 @@
         .product ul { list-style: none; }
         .product li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text-muted); }
         .product li::before { content: "✓ "; color: var(--accent); }
-
-        /* Research */
         .research-highlight {
             background: linear-gradient(135deg, rgba(124,58,237,0.1), rgba(167,139,250,0.05));
             border: 1px solid var(--border); border-radius: 16px;
@@ -112,11 +92,7 @@
         }
         .research-highlight .big { font-size: 4rem; font-weight: 800; color: var(--accent); }
         .research-highlight p { color: var(--text-muted); margin-top: 0.5rem; }
-
-        /* Company */
-        .company-info {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;
-        }
+        .company-info { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
         .company-block {
             background: var(--bg-card); border: 1px solid var(--border);
             border-radius: 12px; padding: 2rem;
@@ -125,15 +101,11 @@
         .company-block table { width: 100%; }
         .company-block td { padding: 0.4rem 0; font-size: 0.9rem; }
         .company-block td:first-child { color: var(--text-muted); width: 120px; }
-
-        /* Footer */
         footer {
             text-align: center; padding: 3rem 2rem;
             border-top: 1px solid var(--border); color: var(--text-muted);
             font-size: 0.85rem;
         }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .hero h2 { font-size: 2rem; }
             .hero-stats { gap: 1.5rem; }
@@ -151,38 +123,38 @@
         <span>Soul-Driven AI</span>
     </div>
     <ul class="nav-links">
-        <li><a href="#home">홈</a></li>
-        <li><a href="#tech">핵심기술</a></li>
-        <li><a href="#products">제품</a></li>
-        <li><a href="#research">연구</a></li>
-        <li><a href="#about">회사소개</a></li>
-        <li><a href="#contact">문의</a></li>
-        <li><a href="en.html">🇺🇸 English</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">🇰🇷 한국어</a></li>
     </ul>
 </nav>
 
 <!-- Hero -->
 <div class="hero" id="home">
     <div>
-        <h2>AI 에이전트에<br><em>영혼</em>을 불어넣다</h2>
-        <p>Soul-Driven AI 기술로 일관된 정체성과 검증된 안전성을 갖춘 AI 에이전트를 구축합니다. 정의하고, 검증하고, 배포하세요.</p>
-        <a href="https://clawsouls.ai" class="btn-primary" target="_blank">ClawSouls 플랫폼 →</a>
+        <h2>Giving AI Agents<br>a <em>Soul</em></h2>
+        <p>Soul-Driven AI technology builds AI agents with consistent identity and verified safety. Define, validate, deploy.</p>
+        <a href="https://clawsouls.ai" class="btn-primary" target="_blank">ClawSouls Platform →</a>
         <div class="hero-stats">
             <div class="hero-stat">
                 <div class="num">15</div>
-                <div class="label">연구 논문</div>
+                <div class="label">Research Papers</div>
             </div>
             <div class="hero-stat">
                 <div class="num">80+</div>
-                <div class="label">AI 페르소나</div>
+                <div class="label">AI Personas</div>
             </div>
             <div class="hero-stat">
                 <div class="num">9</div>
-                <div class="label">등록/출원 상표</div>
+                <div class="label">Trademarks Filed</div>
             </div>
             <div class="hero-stat">
                 <div class="num">100%</div>
-                <div class="label">안전성 달성</div>
+                <div class="label">Safety Score</div>
             </div>
         </div>
     </div>
@@ -190,62 +162,62 @@
 
 <!-- Core Tech -->
 <section id="tech">
-    <h3>핵심 기술</h3>
-    <p class="subtitle">AI 에이전트의 정체성 정의부터 안전성 검증, 배포까지 — 완전한 기술 스택</p>
+    <h3>Core Technology</h3>
+    <p class="subtitle">From identity definition to safety validation to deployment — a complete stack</p>
     <div class="tech-row">
         <div class="tech-item">
             <div class="emoji">🧬</div>
             <h4>Soul Spec</h4>
-            <p>AI 에이전트의 성격, 전문성, 행동 원칙을 구조화된 파일(SOUL.md)로 정의하는 오픈 표준</p>
+            <p>An open standard that defines AI agent personality, expertise, and behavioral principles in a structured file (SOUL.md)</p>
         </div>
         <div class="tech-item">
             <div class="emoji">🛡️</div>
             <h4>SoulScan</h4>
-            <p>53개 규칙 기반 AI 페르소나 안전성 자동 검증 — 페르소나 탈취 공격 100% 방어 달성</p>
+            <p>53-rule automated persona safety validator — achieving 100% defense against persona hijacking attacks</p>
         </div>
         <div class="tech-item">
             <div class="emoji">⚙️</div>
             <h4>SoulClaw</h4>
-            <p>오픈소스 AI 에이전트 프레임워크 — 4-Tier 메모리, 시맨틱 검색, 멀티채널 지원</p>
+            <p>Open-source AI agent framework — 4-Tier memory, semantic search, multi-channel support</p>
         </div>
         <div class="tech-item">
             <div class="emoji">🧠</div>
             <h4>4-Tier Soul Memory</h4>
-            <p>시간 가중치 기반 기억 관리 — 정체성(T0) → 핵심(T1) → 작업(T2) → 세션(T3)</p>
+            <p>Time-weighted memory management — Identity(T0) → Core(T1) → Working(T2) → Session(T3)</p>
         </div>
     </div>
 </section>
 
 <!-- Products -->
 <section id="products">
-    <h3>제품 & 서비스</h3>
-    <p class="subtitle">Soul-Driven AI 에코시스템</p>
+    <h3>Products & Services</h3>
+    <p class="subtitle">The Soul-Driven AI Ecosystem</p>
     <div class="product-grid">
         <div class="product">
-            <h4>🌐 ClawSouls 플랫폼</h4>
+            <h4>🌐 ClawSouls Platform</h4>
             <ul>
-                <li>80개 이상의 전문 AI 페르소나 마켓플레이스</li>
-                <li>원클릭 설치 및 커스터마이징</li>
-                <li>커뮤니티 리뷰 및 평점 시스템</li>
-                <li>ChatGPT / Claude / Gemini 확장 지원</li>
+                <li>80+ specialized AI persona marketplace</li>
+                <li>One-click install and customization</li>
+                <li>Community reviews and rating system</li>
+                <li>ChatGPT / Claude / Gemini extensions</li>
             </ul>
         </div>
         <div class="product">
             <h4>☁️ ClawSouls Hosting</h4>
             <ul>
-                <li>24/7 AI 에이전트 클라우드 운영</li>
-                <li>BYOK — 사용자 자체 API 키로 원하는 LLM 선택</li>
-                <li>웹채팅, Telegram 멀티채널 연동</li>
-                <li>대시보드에서 실시간 설정 변경</li>
+                <li>24/7 AI agent cloud operations</li>
+                <li>BYOK — choose any LLM with your own API key</li>
+                <li>Web chat, Telegram multi-channel integration</li>
+                <li>Real-time configuration via dashboard</li>
             </ul>
         </div>
         <div class="product">
-            <h4>⚙️ SoulClaw 프레임워크</h4>
+            <h4>⚙️ SoulClaw Framework</h4>
             <ul>
-                <li>오픈소스 AI 에이전트 런타임</li>
-                <li>4-Tier Soul Memory 시스템</li>
-                <li>시맨틱 검색 + 시간 가중치 기억 관리</li>
-                <li>npm 배포, Apache 2.0 라이선스</li>
+                <li>Open-source AI agent runtime</li>
+                <li>4-Tier Soul Memory system</li>
+                <li>Semantic search + temporal decay memory</li>
+                <li>npm published, Apache 2.0 license</li>
             </ul>
         </div>
     </div>
@@ -253,84 +225,84 @@
 
 <!-- Research -->
 <section id="research">
-    <h3>연구 & 지식재산</h3>
-    <p class="subtitle">학술 연구에 기반한 기술력</p>
+    <h3>Research & IP</h3>
+    <p class="subtitle">Technology grounded in academic research</p>
     <div class="cards">
         <div class="card">
             <div class="card-icon">📄</div>
-            <h4>연구 논문 15편</h4>
-            <p>Zenodo DOI 등록. 페르소나 안전성, Identity+Governance 결합 방어, Abliterated LLM 실험 등 AI 에이전트 정체성 분야 선도 연구</p>
+            <h4>15 Research Papers</h4>
+            <p>Published with Zenodo DOIs. Pioneering research in persona safety, Identity+Governance defense, and abliterated LLM experiments</p>
         </div>
         <div class="card">
             <div class="card-icon">™️</div>
-            <h4>상표 9건</h4>
-            <p>한국 5건 + 미국 USPTO 4건 출원/등록 진행</p>
+            <h4>9 Trademarks</h4>
+            <p>5 Korean KIPO + 4 US USPTO filings in progress</p>
         </div>
         <div class="card">
             <div class="card-icon">📜</div>
-            <h4>특허 3건 준비</h4>
-            <p>BLT 특허법률사무소와 PCT 병행 출원 준비 — Soul Spec 표준, SoulScan 검증, 4-Tier Memory 아키텍처</p>
+            <h4>3 Patents in Progress</h4>
+            <p>PCT filing with BLT Patent Law Firm — Soul Spec standard, SoulScan validation, 4-Tier Memory architecture</p>
         </div>
     </div>
     <div class="research-highlight">
         <div class="big">100%</div>
-        <p>Identity + Governance 결합 시 abliterated LLM에서도 페르소나 탈취 공격 완전 방어 달성<br><a href="https://zenodo.org/records/19148222" target="_blank" style="font-size:0.9rem;">"Structured Permission Models as Persona-Level Safety" — Zenodo DOI: 10.5281/zenodo.19148222</a></p>
+        <p>Full defense against persona hijacking even on abliterated LLMs when combining Identity + Governance layers<br><a href="https://zenodo.org/records/19148222" target="_blank" style="font-size:0.9rem;">"Structured Permission Models as Persona-Level Safety" — Zenodo DOI: 10.5281/zenodo.19148222</a></p>
     </div>
 </section>
 
 <!-- Use Cases -->
 <section>
-    <h3>적용 분야</h3>
-    <p class="subtitle">Soul-Driven AI가 변화시키는 영역</p>
+    <h3>Use Cases</h3>
+    <p class="subtitle">Where Soul-Driven AI makes a difference</p>
     <div class="cards">
         <div class="card">
             <div class="card-icon">💼</div>
-            <h4>기업 AI 어시스턴트</h4>
-            <p>부서별 전문성과 기업 문화를 반영한 일관된 AI 에이전트. 고객 대면 서비스에서 브랜드 리스크 제거.</p>
+            <h4>Enterprise AI Assistants</h4>
+            <p>Consistent AI agents reflecting department expertise and company culture. Eliminate brand risk in customer-facing services.</p>
         </div>
         <div class="card">
             <div class="card-icon">🎮</div>
-            <h4>게임 / 콘텐츠</h4>
-            <p>NPC, 게임 멘토, 크리에이티브 어시스턴트에 고유한 성격 부여. Unity/Godot 플러그인 지원.</p>
+            <h4>Games & Content</h4>
+            <p>Give unique personalities to NPCs, game mentors, and creative assistants. Unity/Godot plugin support.</p>
         </div>
         <div class="card">
             <div class="card-icon">🏥</div>
-            <h4>전문 도메인 AI</h4>
-            <p>의료, 법률, 교육 등 도메인 전문가 페르소나. 안전성 검증(SoulScan)으로 규제 대응.</p>
+            <h4>Domain-Expert AI</h4>
+            <p>Healthcare, legal, education domain expert personas. Safety validation (SoulScan) for regulatory compliance.</p>
         </div>
         <div class="card">
             <div class="card-icon">🤖</div>
-            <h4>로보틱스 / IoT</h4>
-            <p>ROS2 연동 AI 에이전트. 로봇에 일관된 행동 원칙과 정체성을 부여하는 Soul Spec 적용.</p>
+            <h4>Robotics & IoT</h4>
+            <p>ROS2-integrated AI agents. Apply Soul Spec to give robots consistent behavioral principles and identity.</p>
         </div>
     </div>
 </section>
 
 <!-- Company -->
 <section id="about">
-    <h3>회사 소개</h3>
-    <p class="subtitle">Soul-Driven AI Agent 전문기업</p>
+    <h3>About Us</h3>
+    <p class="subtitle">Soul-Driven AI Agent Company</p>
     <div class="company-info">
         <div class="company-block">
-            <h4>기업 정보</h4>
+            <h4>Company Info</h4>
             <table>
-                <tr><td>상호</td><td>MoireSoft (무아레소프트)</td></tr>
-                <tr><td>대표</td><td>이재준</td></tr>
-                <tr><td>설립</td><td>2024년 10월</td></tr>
-                <tr><td>사업분야</td><td>AI 에이전트 정체성 기술</td></tr>
-                <tr><td>브랜드</td><td>ClawSouls, SoulSpec, SoulScan</td></tr>
-                <tr><td>홈페이지</td><td><a href="https://clawsouls.ai" target="_blank">clawsouls.ai</a></td></tr>
+                <tr><td>Name</td><td>MoireSoft</td></tr>
+                <tr><td>CEO</td><td>Jaejoon Lee</td></tr>
+                <tr><td>Founded</td><td>October 2024</td></tr>
+                <tr><td>Domain</td><td>AI Agent Identity Technology</td></tr>
+                <tr><td>Brands</td><td>ClawSouls, SoulSpec, SoulScan</td></tr>
+                <tr><td>Website</td><td><a href="https://clawsouls.ai" target="_blank">clawsouls.ai</a></td></tr>
             </table>
         </div>
         <div class="company-block">
-            <h4>오픈소스 & 커뮤니티</h4>
+            <h4>Open Source & Community</h4>
             <table>
                 <tr><td>GitHub</td><td><a href="https://github.com/clawsouls" target="_blank">github.com/clawsouls</a></td></tr>
-                <tr><td>프레임워크</td><td>SoulClaw v2026.3.32</td></tr>
-                <tr><td>라이선스</td><td>Apache 2.0</td></tr>
+                <tr><td>Framework</td><td>SoulClaw v2026.3.32</td></tr>
+                <tr><td>License</td><td>Apache 2.0</td></tr>
                 <tr><td>npm</td><td><a href="https://www.npmjs.com/package/soulclaw" target="_blank">soulclaw</a></td></tr>
-                <tr><td>논문</td><td><a href="https://zenodo.org/search?q=clawsouls" target="_blank">Zenodo (15편)</a></td></tr>
-                <tr><td>블로그</td><td><a href="https://blog.clawsouls.ai" target="_blank">blog.clawsouls.ai</a></td></tr>
+                <tr><td>Papers</td><td><a href="https://zenodo.org/search?q=clawsouls" target="_blank">Zenodo (15 papers)</a></td></tr>
+                <tr><td>Blog</td><td><a href="https://blog.clawsouls.ai" target="_blank">blog.clawsouls.ai</a></td></tr>
             </table>
         </div>
     </div>
@@ -338,13 +310,13 @@
 
 <!-- Contact -->
 <section id="contact">
-    <h3>문의</h3>
-    <p class="subtitle">협업, 투자, 기술 문의를 환영합니다</p>
+    <h3>Contact</h3>
+    <p class="subtitle">We welcome collaboration, investment, and technical inquiries</p>
     <div class="company-info" style="max-width:600px; margin:0 auto;">
         <div class="company-block" style="grid-column: 1/-1;">
             <table>
-                <tr><td>이메일</td><td><a href="mailto:ceo@moiresoft.com">ceo@moiresoft.com</a></td></tr>
-                <tr><td>웹사이트</td><td><a href="https://clawsouls.ai" target="_blank">clawsouls.ai</a></td></tr>
+                <tr><td>Email</td><td><a href="mailto:ceo@moiresoft.com">ceo@moiresoft.com</a></td></tr>
+                <tr><td>Website</td><td><a href="https://clawsouls.ai" target="_blank">clawsouls.ai</a></td></tr>
                 <tr><td>GitHub</td><td><a href="https://github.com/clawsouls" target="_blank">github.com/clawsouls</a></td></tr>
             </table>
         </div>
@@ -352,8 +324,8 @@
 </section>
 
 <footer>
-    <p>© 2024-2026 MoireSoft. Soul-Driven AI Agent 전문기업.</p>
-    <p style="margin-top:0.5rem;">Powered by <a href="https://clawsouls.ai" target="_blank">ClawSouls</a> — AI 에이전트에 영혼을 불어넣다</p>
+    <p>© 2024-2026 MoireSoft. Soul-Driven AI Agent Company.</p>
+    <p style="margin-top:0.5rem;">Powered by <a href="https://clawsouls.ai" target="_blank">ClawSouls</a> — Giving AI Agents a Soul</p>
 </footer>
 
 </body>
